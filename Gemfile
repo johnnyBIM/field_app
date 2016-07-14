@@ -5,8 +5,15 @@ source 'https://rubygems.org'
 gem 'rails', '5.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'puma', '3.4.0'
+
+#Use postgresql for production data base
+group :production do
+  gem 'pg'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.5'
+gem 'bootstrap-sass', '3.3.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.0.0'
 # Use CoffeeScript for .coffee assets and views
@@ -20,7 +27,6 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.4.1'
-gem 'bootstrap-sass', '3.3.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'
